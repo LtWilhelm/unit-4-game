@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Galaxy';
+    src: url(../SFDistantGalaxy.ttf);
+}
+
+@font-face {
+    font-family: 'Galaxy Outline';
+    src: url(../SFDistantGalaxyOutline.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: url(../images/stars.jpg);
+    font-family: 'Galaxy';
+}
+
+h1 {
+    font-family: 'Galaxy Outline';
+    font-size: 3em;
+    text-align: center;
+    color: yellow;
+    padding: 1em;
+    width: 100%;
+    background-color: black;
+}
+
+button {
+    font-family: 'Galaxy';
+    font-size: 3em;
+    color: yellow;
+    background-color: black;
+    border-style: dotted;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#play {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button:hover {
+    background-color: rgb(54, 54, 54);
+    font-size: 3.5em;
+}
+
+#stat-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: yellow;
+    font-size: 2em;
+}
+
+#characters {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#characters:not(.hidden) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#characters h1 {
+    flex-basis: 100%;
+}
+#characters img {
+    border-radius: 1em;
+    width: 300px;
+    height: 300px;
+}
+
+#characters img:hover {
+    border: yellow dotted;
+}
+
+#play-area {
+    display: flex;
+    justify-content: space-around;
+}
