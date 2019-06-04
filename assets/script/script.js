@@ -30,7 +30,6 @@ function fighter (name, picture, attack, counter, health) {
 let allFighters = {};
 
 //randomly generates fighters stats and sets name and picture
-
 function initGame () {
     fighterList.forEach(element => {
         allFighters[element] = new fighter(
@@ -56,12 +55,14 @@ function initGame () {
     $characters.removeClass('hidden');
 }
 
+//takes stats from selected fighter and displays it on screen
 function displayStats (fighter) {
     $health.text('Health: ' + fighter.health); 
     $attackPower.text('Attack Power: ' + fighter.attack);
 
 }
 
+//click handlers
 $play.on('click', initGame);
 $characters.on('click', '.character-btn', function() {
     if (!fighterSelected){
