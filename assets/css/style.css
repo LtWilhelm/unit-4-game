@@ -51,9 +51,6 @@ button:hover {
     /* font-size: 3.5em; */
 }
 
-button:active {
-    border: ;
-}
 
 #stat-bar {
     position: fixed;
