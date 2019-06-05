@@ -66,7 +66,7 @@ function displayStats (fighter) {
 $play.on('click', initGame);
 $characters.on('click', '.character-btn', function() {
     if (!fighterSelected){
-        $attacker.append(this);
+        $attacker.prepend(this);
         fighterSelected = true;
         $characterSelect.html('Select your challenger!');
         displayStats(allFighters[this.name]);
