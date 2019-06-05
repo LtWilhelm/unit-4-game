@@ -16,6 +16,7 @@ body {
     background-color: black;
     background-image: url(../images/stars.jpg);
     font-family: 'Galaxy';
+    color: yellow;
 }
 
 h1 {
@@ -68,18 +69,19 @@ button:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 75%;
 }
 
 #characters:not(.hidden) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 #characters h1 {
     flex-basis: 100%;
 }
-#characters img {
+img {
     border-radius: 1em;
     width: 300px;
     height: 300px;
@@ -92,4 +94,8 @@ button:active {
 #play-area {
     display: flex;
     justify-content: space-around;
+}
+
+p {
+    font-size: 1.5em;
 }
