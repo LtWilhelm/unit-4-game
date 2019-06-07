@@ -59,6 +59,7 @@ button:hover {
     background-color: black;
     color: yellow;
     font-size: 2em;
+    z-index: -1;
 }
 
 #characters {
